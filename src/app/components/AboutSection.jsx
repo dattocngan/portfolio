@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: 'Skills',
     id: 'skills',
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -21,7 +21,7 @@ const TAB_DATA = [
     title: 'Education',
     id: 'education',
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>Computer Science</li>
         <li>Information Technology</li>
       </ul>
@@ -31,7 +31,7 @@ const TAB_DATA = [
     title: 'Certifications',
     id: 'certifications',
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>React Developer</li>
         <li>Node.js Developer</li>
         <li>Full Stack Developer</li>
@@ -58,7 +58,7 @@ const AboutSection = () => {
           width={500}
           height={500}
         />
-        <div>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil esse
@@ -66,7 +66,7 @@ const AboutSection = () => {
             fugiat doloribus doloremque id dolores vero provident eos voluptate
             temporibus deleniti.
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange('skills')}
               active={tab === 'skills'}
